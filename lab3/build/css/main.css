@@ -1,0 +1,116 @@
+/**
+ * Global Reset of all HTML Elements
+ *
+ * Resetting all of our HTML Elements ensures a smoother
+ * visual transition between browsers. If you don't believe me,
+ * try temporarily commenting out this block of code, then go
+ * and look at Mozilla versus Safari, both good browsers with
+ * a good implementation of CSS. The thing is, all browser CSS
+ * defaults are different and at the end of the day if visual
+ * consistency is what we're shooting for, then we need to
+ * make sure we're resetting all spacing elements.
+ *
+ */
+html, body {
+  border: 0;
+  font-family: "Helvetica-Neue", "Helvetica", Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+div, span, object, iframe, img, table, caption, thead, tbody,
+tfoot, tr, tr, td, article, aside, canvas, details, figure, hgroup, menu,
+nav, footer, header, section, summary, mark, audio, video {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cit, code,
+del, dfn, em, ins, q, samp, small, strong, sub, sup, b, i, hr, dl, dt, dd,
+ol, ul, li, fieldset, legend, label {
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0; }
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+  display: block; }
+
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+  table caption, table th, table td {
+    text-align: left;
+    vertical-align: middle; }
+
+a img {
+  border: 0; }
+
+:focus {
+  outline: 0; }
+
+*,
+*:before, *:after {
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url("../fonts/OpenSans-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype"); }
+
+body {
+  font: 14px OpenSans-Regular;
+  margin: 50px;
+  background: #f5f5f5; }
+
+h2 {
+  font-size: 24px; }
+
+svg {
+  margin-top: 40px; }
+
+.grid .tick {
+  stroke: lightgrey;
+  opacity: 0.7;
+  shape-rendering: crispEdges; }
+
+.grid path {
+  stroke-width: 0; }
+
+.axis path {
+  fill: none;
+  stroke: #bbb;
+  shape-rendering: crispEdges; }
+
+.axis text {
+  fill: #555; }
+
+.axis line {
+  stroke: #e7e7e7;
+  shape-rendering: crispEdges; }
+
+.axis .axis-label {
+  font-size: 14px; }
+
+.line {
+  fill: none;
+  stroke-width: 1.5px; }
+
+.dot {
+  /* consider the stroke-with the mouse detect radius? */
+  stroke: transparent;
+  stroke-width: 10px;
+  cursor: pointer; }
+
+.dot:hover {
+  stroke: rgba(68, 127, 255, 0.3); }
